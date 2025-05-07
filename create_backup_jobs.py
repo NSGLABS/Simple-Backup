@@ -5,6 +5,10 @@ import tkinter as tk
 import pyinputplus as pyin
 import csv, os
 
+jobs_path = os.path.join(os.getcwd(), 'Jobs')
+if not os.path.exists(jobs_path):
+    os.makedirs(jobs_path)
+
 
 def get_dir():
     """Returns path for src and dst locations."""

@@ -12,6 +12,7 @@ temp_dir = os.path.join(os.getcwd(), 'temp')
 if not os.path.exists(temp_dir):
     os.makedirs(temp_dir)
 
+
 def get_jobs():
     """Reads the jobs.csv file"""
 

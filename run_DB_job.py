@@ -86,7 +86,7 @@ def copy_to_temp():
         # zip the files
         if not os.path.exists(dst[jobs]):
             os.makedirs(dst[jobs])
-        zip_name = f"backup_{datetime.datetime.now():%Y%m%d_%H%M%S}.zip"
+        zip_name = f"DB_backup_{datetime.datetime.now().strftime('%d-%m-%Y_%H-%M-%S')}.zip"
         zip_path = os.path.join(dst[jobs], zip_name)
 
         zip_files(zip_path)
